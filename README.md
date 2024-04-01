@@ -6,7 +6,7 @@ While writing PowerShell scripts at work for easing the process of deploying a d
 
 ## Setup
 ### Dependencies
-If you are loading this DLL into PowerShell, a PowerShell version with at least CLR version 4 (4.0.30319.42000) is requried, as the IShellLink Wrapper DLL was compiled targeting .NET Framework 4.7.2 (supported by CLR version 4). By default, all Windows 10 versions have, at minimum, this CLR version installed. This version of the .NET Framework can be installed on Windows versions down to Windows 7. See these MSDN articles for more information: [Determine .NET Framework Version](#https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed), [.NET Framework Versions and Dependencies](#https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies).
+If you are loading this DLL into PowerShell, a PowerShell version with at least CLR version 4 (4.0.30319.42000) is requried, as the IShellLink Wrapper DLL was compiled targeting .NET Framework 4.7.2 (supported by CLR version 4). By default, all Windows 10 versions have, at minimum, this CLR version installed. This version of the .NET Framework can be installed on Windows versions down to Windows 7. See these MSDN articles for more information: [Determine .NET Framework Version](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed), [.NET Framework Versions and Dependencies](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies).
 
 I am not an expert on C# by any means, but I assume that the above roughly applies to C# development, as well.
 ### Loading the DLL in PowerShell
