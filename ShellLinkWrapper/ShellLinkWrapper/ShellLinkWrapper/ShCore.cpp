@@ -21,6 +21,7 @@ namespace WindowsShortcut {
 
     void ShortcutProperties::SetTargetPath(const wchar_t* target_path) {
         
+        if (this->TargetPath) delete[] this->TargetPath;
         wchar_t* buf = new wchar_t[MAX_PATH];
         memcpy(buf, target_path, MAX_PATH);
         this->TargetPath = buf;
@@ -39,6 +40,7 @@ namespace WindowsShortcut {
 
     void ShortcutProperties::SetDescription(const wchar_t* description) {
 
+        if (this->Description) delete[] this->Description;
         wchar_t* buf = new wchar_t[MAX_PATH];
         memcpy(buf, description, MAX_PATH);
         this->Description = buf;
@@ -57,6 +59,7 @@ namespace WindowsShortcut {
 
     void ShortcutProperties::SetArguments(const wchar_t* arguments) {
 
+        if (this->Arguments) delete[] this->Arguments;
         wchar_t* buf = new wchar_t[MAX_PATH];
         memcpy(buf, arguments, MAX_PATH);
         this->Arguments = buf;
@@ -75,6 +78,7 @@ namespace WindowsShortcut {
 
     void ShortcutProperties::SetWorkingDirectory(const wchar_t* working_directory) {
 
+        if (this->WorkingDirectory) delete[] this->WorkingDirectory;
         wchar_t* buf = new wchar_t[MAX_PATH];
         memcpy(buf, working_directory, MAX_PATH);
         this->WorkingDirectory = buf;
@@ -93,6 +97,7 @@ namespace WindowsShortcut {
 
     void ShortcutProperties::SetRelativePath(const wchar_t* relative_path) {
 
+        if (this->RelativePath) delete[] this->RelativePath;
         wchar_t* buf = new wchar_t[MAX_PATH];
         memcpy(buf, relative_path, MAX_PATH);
         this->RelativePath = buf;
@@ -111,6 +116,7 @@ namespace WindowsShortcut {
 
     void ShortcutProperties::SetIconLocation(const wchar_t* icon_location) {
 
+        if (this->IconLocation) delete[] this->IconLocation;
         wchar_t* buf = new wchar_t[MAX_PATH];
         memcpy(buf, icon_location, MAX_PATH);
         this->IconLocation = buf;
